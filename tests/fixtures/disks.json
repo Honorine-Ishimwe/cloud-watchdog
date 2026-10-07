@@ -1,0 +1,30 @@
+[
+  {
+    "creationData": {
+      "createOption": "Empty"
+    },
+    "diskIOPSReadWrite": 500,
+    "diskMBpsReadWrite": 60,
+    "diskSizeBytes": 4294967296,
+    "diskSizeGB": 4,
+    "diskState": "Unattached",
+    "encryption": {
+      "type": "EncryptionAtRestWithPlatformKey"
+    },
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-test/providers/Microsoft.Compute/disks/disk-unattached-01",
+    "location": "canadacentral",
+    "name": "disk-unattached-01",
+    "networkAccessPolicy": "AllowAll",
+    "provisioningState": "Succeeded",
+    "publicNetworkAccess": "Enabled",
+    "resourceGroup": "rg-watchdog-test",
+    "sku": {
+      "name": "Standard_LRS",
+      "tier": "Standard"
+    },
+    "tags": {},
+    "timeCreated": "2026-10-06T15:08:47.1131589+00:00",
+    "type": "Microsoft.Compute/disks",
+    "uniqueId": "f8ca169d-4d90-4256-9ba7-e35068ede7f0"
+  }
+]

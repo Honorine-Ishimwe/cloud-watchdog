@@ -1,0 +1,52 @@
+[
+  {
+    "changedTime": "2026-10-06T15:18:50.220541+00:00",
+    "createdTime": "2026-10-06T15:08:47.082478+00:00",
+    "extendedLocation": null,
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-test/providers/Microsoft.Compute/disks/disk-unattached-01",
+    "identity": null,
+    "kind": null,
+    "location": "canadacentral",
+    "managedBy": null,
+    "name": "disk-unattached-01",
+    "plan": null,
+    "properties": null,
+    "provisioningState": "Succeeded",
+    "resourceGroup": "rg-watchdog-test",
+    "sku": {
+      "capacity": null,
+      "family": null,
+      "model": null,
+      "name": "Standard_LRS",
+      "size": null,
+      "tier": "Standard"
+    },
+    "tags": {},
+    "type": "Microsoft.Compute/disks"
+  },
+  {
+    "changedTime": "2026-10-06T15:14:47.506574+00:00",
+    "createdTime": "2026-10-06T15:14:43.231085+00:00",
+    "extendedLocation": null,
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-test/providers/Microsoft.Network/publicIPAddresses/pip-unused-01",
+    "identity": null,
+    "kind": null,
+    "location": "canadacentral",
+    "managedBy": null,
+    "name": "pip-unused-01",
+    "plan": null,
+    "properties": null,
+    "provisioningState": "Succeeded",
+    "resourceGroup": "rg-watchdog-test",
+    "sku": {
+      "capacity": null,
+      "family": null,
+      "model": null,
+      "name": "Standard",
+      "size": null,
+      "tier": null
+    },
+    "tags": null,
+    "type": "Microsoft.Network/publicIPAddresses"
+  }
+]

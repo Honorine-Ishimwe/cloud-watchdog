@@ -1,0 +1,24 @@
+[
+  {
+    "ddosSettings": {
+      "protectionMode": "VirtualNetworkInherited"
+    },
+    "etag": "W/\"48e69221-a032-4b9a-8618-a2f0e6c4d8de\"",
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-test/providers/Microsoft.Network/publicIPAddresses/pip-unused-01",
+    "idleTimeoutInMinutes": 4,
+    "ipAddress": "4.205.31.70",
+    "ipTags": [],
+    "location": "canadacentral",
+    "name": "pip-unused-01",
+    "provisioningState": "Succeeded",
+    "publicIPAddressVersion": "IPv4",
+    "publicIPAllocationMethod": "Static",
+    "resourceGroup": "rg-watchdog-test",
+    "resourceGuid": "ac4914b7-ae2f-41e9-b7e3-c7b2747b0fff",
+    "sku": {
+      "name": "Standard",
+      "tier": "Regional"
+    },
+    "type": "Microsoft.Network/publicIPAddresses"
+  }
+]
