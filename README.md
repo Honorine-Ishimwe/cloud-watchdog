@@ -55,16 +55,30 @@ AZURE_OPENAI_API_KEY=<your-key>
 AZURE_OPENAI_DEPLOYMENT=gpt-4.1-mini
 ```
 
-### 2. Run Offline with Fixtures
+### 2. Run Live Against Your Real Azure Account (Default)
+By default, Cloud Cost Watchdog audits your **real Azure account** (read-only) using your active Azure CLI session:
+
 ```bash
-python main.py --fixtures
+# Sign in to Azure
+az login
+
+# Verify which subscription is active (optional: switch if you have multiple)
+az account show --query "{name:name, id:id}" -o table
+# az account set --subscription "<subscription-name-or-id>"
+
+# Audit your entire active Azure subscription
+.venv/bin/python main.py --subscription
+
+# Or audit a single resource group
+.venv/bin/python main.py <your-resource-group-name>
 ```
 
-### 3. Run Live Against Azure
+The report is written to `reports/report-YYYY-MM-DD.md` (or pass `--output path/to/report.md`).
+
+### 3. Run Offline with Test Fixtures (Optional)
+Local JSON fixtures in `tests/fixtures/` exist for offline testing and CI without calling Azure:
 ```bash
-az login
-python main.py rg-watchdog-test          # audit a single resource group
-python main.py --subscription            # audit the entire subscription
+.venv/bin/python main.py --fixtures
 ```
 
 ## Testing & Accuracy Evaluation

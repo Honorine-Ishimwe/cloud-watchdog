@@ -150,6 +150,14 @@ def run_tool(name: str, raw_args: str, output_path: str | None = None):
         return {"error": f"Tool {name} failed: {e}"}
 
 
+def build_base_url(endpoint: str) -> str:
+    """Normalize an Azure OpenAI endpoint to the /openai/v1/ base URL without duplicating the suffix."""
+    cleaned = endpoint.strip().rstrip("/")
+    if cleaned.endswith("/openai/v1"):
+        return cleaned + "/"
+    return cleaned + "/openai/v1/"
+
+
 def run_agent_session(
     resource_group: str = "",
     output_path: str | None = None,
@@ -164,7 +172,7 @@ def run_agent_session(
         if err or not credential:
             return {"status": err or "Missing Azure OpenAI credentials.", "report_path": None, "findings": [], "steps": 0}
         client = OpenAI(
-            base_url=config.ENDPOINT.rstrip("/") + "/openai/v1/",
+            base_url=build_base_url(config.ENDPOINT),
             api_key=credential,
         )
 

@@ -2,7 +2,7 @@ import json
 from types import SimpleNamespace
 
 import config
-from agent.loop import run_agent_session
+from agent.loop import build_base_url, run_agent_session
 from eval.run_eval import EVAL_FIXTURES_DIR, score_findings
 from report.write_report import write_report
 from tools.get_disks import get_disks
@@ -128,3 +128,11 @@ def test_eval_scorer_and_decoy_fixtures(monkeypatch):
     assert {d["name"] for d in disks} == {"disk-unattached-01", "disk-attached-prod"}
     vms = get_vm_status("rg-watchdog-eval")
     assert {v["name"] for v in vms} == {"vm-stopped-01", "vm-idle-01", "vm-busy-prod", "vm-deallocated-01"}
+
+
+def test_build_base_url_avoids_duplicate_suffix():
+    expected = "https://example.openai.azure.com/openai/v1/"
+    assert build_base_url("https://example.openai.azure.com") == expected
+    assert build_base_url("https://example.openai.azure.com/") == expected
+    assert build_base_url("https://example.openai.azure.com/openai/v1") == expected
+    assert build_base_url("https://example.openai.azure.com/openai/v1/") == expected
