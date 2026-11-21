@@ -1,0 +1,19 @@
+{
+  "by_resource": {
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-test/providers/Microsoft.Compute/virtualMachines/vm-stopped-01": {
+      "daily": [],
+      "note": "No metric data available because the VM is stopped. Do not interpret missing data as 0% usage."
+    },
+    "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-test/providers/Microsoft.Compute/virtualMachines/vm-idle-01": {
+      "daily": [
+        {"date": "2026-10-01", "average": 1.1, "maximum": 3.4},
+        {"date": "2026-10-02", "average": 0.9, "maximum": 2.8},
+        {"date": "2026-10-03", "average": 1.3, "maximum": 4.1},
+        {"date": "2026-10-04", "average": 1.0, "maximum": 3.0},
+        {"date": "2026-10-05", "average": 0.8, "maximum": 2.5},
+        {"date": "2026-10-06", "average": 1.2, "maximum": 3.7}
+      ],
+      "note": ""
+    }
+  }
+}

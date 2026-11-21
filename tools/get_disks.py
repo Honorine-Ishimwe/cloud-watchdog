@@ -1,8 +1,16 @@
+from tools._azure import run_az, use_fixtures
 from tools._fixtures import load_fixture
 
 
-def get_disks(resource_group: str) -> list[dict] | dict:
-    data = load_fixture("disks.json")
+def get_disks(resource_group: str = "") -> list[dict] | dict:
+    if use_fixtures():
+        data = load_fixture("disks.json")
+    else:
+        args = ["disk", "list"]
+        if resource_group:
+            args += ["-g", resource_group]
+        data = run_az(args)
+
     if isinstance(data, dict):
         return data
 

@@ -1,0 +1,15 @@
+{
+  "resource_group": "rg-watchdog-eval",
+  "expected_waste": [
+    "disk-unattached-01",
+    "pip-unused-01",
+    "vm-stopped-01",
+    "vm-idle-01"
+  ],
+  "decoys": [
+    "disk-attached-prod",
+    "pip-prod-web",
+    "vm-busy-prod",
+    "vm-deallocated-01"
+  ]
+}

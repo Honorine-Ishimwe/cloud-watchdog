@@ -1,0 +1,17 @@
+[
+  {
+    "category": "Cost",
+    "impact": "High",
+    "impactedField": "Microsoft.Compute/virtualMachines",
+    "impactedValue": "vm-idle-01",
+    "shortDescription": {
+      "problem": "Right-size or shutdown underutilized virtual machines",
+      "solution": "Virtual machine vm-idle-01 had average CPU utilization under 5% over the past 7 days."
+    },
+    "extendedProperties": {
+      "annualSavingsAmount": "364.44",
+      "savingsAmount": "30.37",
+      "savingsCurrency": "USD"
+    }
+  }
+]

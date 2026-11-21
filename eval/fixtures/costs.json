@@ -1,0 +1,12 @@
+{
+  "costs": [
+    {"resource": "disk-unattached-01", "cost": 5.89, "currency": "USD"},
+    {"resource": "disk-attached-prod", "cost": 38.40, "currency": "USD"},
+    {"resource": "pip-unused-01", "cost": 3.65, "currency": "USD"},
+    {"resource": "pip-prod-web", "cost": 3.65, "currency": "USD"},
+    {"resource": "vm-stopped-01", "cost": 70.08, "currency": "USD"},
+    {"resource": "vm-idle-01", "cost": 30.37, "currency": "USD"},
+    {"resource": "vm-busy-prod", "cost": 140.16, "currency": "USD"}
+  ],
+  "note": "Azure cost data can lag by up to 24 hours; newly created resources may not appear yet."
+}

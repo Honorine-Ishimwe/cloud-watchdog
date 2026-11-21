@@ -1,0 +1,22 @@
+[
+  {
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-test/providers/Microsoft.Compute/virtualMachines/vm-stopped-01",
+    "name": "vm-stopped-01",
+    "location": "canadacentral",
+    "powerState": "VM stopped",
+    "timeCreated": "2026-09-20T12:00:00.000000+00:00",
+    "hardwareProfile": {
+      "vmSize": "Standard_D2s_v3"
+    }
+  },
+  {
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-test/providers/Microsoft.Compute/virtualMachines/vm-idle-01",
+    "name": "vm-idle-01",
+    "location": "canadacentral",
+    "powerState": "VM running",
+    "timeCreated": "2026-09-25T09:30:00.000000+00:00",
+    "hardwareProfile": {
+      "vmSize": "Standard_B2s"
+    }
+  }
+]

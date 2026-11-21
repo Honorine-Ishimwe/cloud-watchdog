@@ -1,0 +1,20 @@
+[
+  {
+    "name": "pip-unused-01",
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-eval/providers/Microsoft.Network/publicIPAddresses/pip-unused-01",
+    "ipAddress": "20.10.20.30",
+    "publicIPAllocationMethod": "Static",
+    "sku": {"name": "Standard"},
+    "ipConfiguration": null
+  },
+  {
+    "name": "pip-prod-web",
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-eval/providers/Microsoft.Network/publicIPAddresses/pip-prod-web",
+    "ipAddress": "20.10.20.40",
+    "publicIPAllocationMethod": "Static",
+    "sku": {"name": "Standard"},
+    "ipConfiguration": {
+      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-eval/providers/Microsoft.Network/networkInterfaces/nic-prod-web/ipConfigurations/ipconfig1"
+    }
+  }
+]

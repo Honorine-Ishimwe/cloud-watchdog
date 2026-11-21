@@ -1,0 +1,34 @@
+[
+  {
+    "name": "vm-stopped-01",
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-eval/providers/Microsoft.Compute/virtualMachines/vm-stopped-01",
+    "location": "canadacentral",
+    "powerState": "VM stopped",
+    "timeCreated": "2026-09-15T10:00:00Z",
+    "hardwareProfile": {"vmSize": "Standard_D2s_v3"}
+  },
+  {
+    "name": "vm-idle-01",
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-eval/providers/Microsoft.Compute/virtualMachines/vm-idle-01",
+    "location": "canadacentral",
+    "powerState": "VM running",
+    "timeCreated": "2026-09-18T10:00:00Z",
+    "hardwareProfile": {"vmSize": "Standard_B2s"}
+  },
+  {
+    "name": "vm-busy-prod",
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-eval/providers/Microsoft.Compute/virtualMachines/vm-busy-prod",
+    "location": "canadacentral",
+    "powerState": "VM running",
+    "timeCreated": "2026-08-01T10:00:00Z",
+    "hardwareProfile": {"vmSize": "Standard_D4s_v3"}
+  },
+  {
+    "name": "vm-deallocated-01",
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-eval/providers/Microsoft.Compute/virtualMachines/vm-deallocated-01",
+    "location": "canadacentral",
+    "powerState": "VM deallocated",
+    "timeCreated": "2026-08-15T10:00:00Z",
+    "hardwareProfile": {"vmSize": "Standard_B2s"}
+  }
+]

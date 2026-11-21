@@ -1,0 +1,74 @@
+[
+  {
+    "name": "disk-unattached-01",
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-eval/providers/Microsoft.Compute/disks/disk-unattached-01",
+    "type": "Microsoft.Compute/disks",
+    "location": "canadacentral",
+    "createdTime": "2026-09-10T10:00:00Z",
+    "managedBy": null,
+    "sku": {"name": "Standard_LRS"}
+  },
+  {
+    "name": "disk-attached-prod",
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-eval/providers/Microsoft.Compute/disks/disk-attached-prod",
+    "type": "Microsoft.Compute/disks",
+    "location": "canadacentral",
+    "createdTime": "2026-08-01T10:00:00Z",
+    "managedBy": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-eval/providers/Microsoft.Compute/virtualMachines/vm-busy-prod",
+    "sku": {"name": "Premium_LRS"}
+  },
+  {
+    "name": "pip-unused-01",
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-eval/providers/Microsoft.Network/publicIPAddresses/pip-unused-01",
+    "type": "Microsoft.Network/publicIPAddresses",
+    "location": "canadacentral",
+    "createdTime": "2026-09-12T10:00:00Z",
+    "managedBy": null,
+    "sku": {"name": "Standard"}
+  },
+  {
+    "name": "pip-prod-web",
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-eval/providers/Microsoft.Network/publicIPAddresses/pip-prod-web",
+    "type": "Microsoft.Network/publicIPAddresses",
+    "location": "canadacentral",
+    "createdTime": "2026-08-01T10:00:00Z",
+    "managedBy": null,
+    "sku": {"name": "Standard"}
+  },
+  {
+    "name": "vm-stopped-01",
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-eval/providers/Microsoft.Compute/virtualMachines/vm-stopped-01",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "canadacentral",
+    "createdTime": "2026-09-15T10:00:00Z",
+    "managedBy": null,
+    "sku": null
+  },
+  {
+    "name": "vm-idle-01",
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-eval/providers/Microsoft.Compute/virtualMachines/vm-idle-01",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "canadacentral",
+    "createdTime": "2026-09-18T10:00:00Z",
+    "managedBy": null,
+    "sku": null
+  },
+  {
+    "name": "vm-busy-prod",
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-eval/providers/Microsoft.Compute/virtualMachines/vm-busy-prod",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "canadacentral",
+    "createdTime": "2026-08-01T10:00:00Z",
+    "managedBy": null,
+    "sku": null
+  },
+  {
+    "name": "vm-deallocated-01",
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-eval/providers/Microsoft.Compute/virtualMachines/vm-deallocated-01",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "canadacentral",
+    "createdTime": "2026-08-15T10:00:00Z",
+    "managedBy": null,
+    "sku": null
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "costs": [
+    {
+      "resource": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-test/providers/Microsoft.Compute/disks/disk-unattached-01",
+      "cost": 0.64,
+      "currency": "USD"
+    },
+    {
+      "resource": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-test/providers/Microsoft.Network/publicIPAddresses/pip-unused-01",
+      "cost": 3.65,
+      "currency": "USD"
+    },
+    {
+      "resource": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-test/providers/Microsoft.Compute/virtualMachines/vm-stopped-01",
+      "cost": 70.08,
+      "currency": "USD"
+    },
+    {
+      "resource": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-test/providers/Microsoft.Compute/virtualMachines/vm-idle-01",
+      "cost": 30.37,
+      "currency": "USD"
+    }
+  ],
+  "note": "Azure cost data can lag by up to 24 hours; newly created resources may not appear yet."
+}

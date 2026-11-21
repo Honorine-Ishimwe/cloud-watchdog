@@ -1,0 +1,20 @@
+[
+  {
+    "name": "disk-unattached-01",
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-eval/providers/Microsoft.Compute/disks/disk-unattached-01",
+    "diskState": "Unattached",
+    "diskSizeGB": 128,
+    "timeCreated": "2026-09-10T10:00:00Z",
+    "managedBy": null,
+    "sku": {"name": "Standard_LRS"}
+  },
+  {
+    "name": "disk-attached-prod",
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-eval/providers/Microsoft.Compute/disks/disk-attached-prod",
+    "diskState": "Attached",
+    "diskSizeGB": 256,
+    "timeCreated": "2026-08-01T10:00:00Z",
+    "managedBy": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-watchdog-eval/providers/Microsoft.Compute/virtualMachines/vm-busy-prod",
+    "sku": {"name": "Premium_LRS"}
+  }
+]
